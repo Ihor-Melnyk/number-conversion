@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Card">
+      <div class="CardInner">
+        <form class="form">
+          <p>Оберіть систему в яку необхідно перевести число:</p>
+          <div class="container">
+            <div class="box">
+              <input type="radio" id="binary" name="contact" value="binary" />
+              <label for="binary">Двійкова система</label>
+            </div>
+            <div class="box">
+              <input type="radio" id="octal" name="contact" value="octal" />
+              <label for="octal">Восьмирічна система</label>
+            </div>
+            <div class="box">
+              <input type="radio" id="sixteen" name="contact" value="sixteen" />
+              <label for="sixteen">Шістнадцятирічна система</label>
+            </div>
+          </div>
+          <div class="InputContainer">
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="Введіть число..."
+            />
+            <!-- <label for="number"></label> -->
+          </div>
+          <div>
+            <button type="submit">Форматувати число</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="forAlert">
+      В цьомі місці побачимо результат конвертування числа із десятичної системи
+      в іншу
+    </p>
+  </body>
+  <script src="./index.js"></script>
+</html>
